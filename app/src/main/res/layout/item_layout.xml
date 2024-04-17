@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/bar_bg">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/tshirt" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Price"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/item_button"
+        android:layout_width="115dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_bg2"
+        android:text="Add to Cart"
+        android:textColor="#1db7ae"
+        android:textStyle="italic" />
+
+</LinearLayout>
